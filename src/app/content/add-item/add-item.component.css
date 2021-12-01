@@ -1,0 +1,10 @@
+.botoes{
+  display: flex;
+  justify-content: flex-end;
+}
+.form-add{
+  width: 400px;
+}
+.btn{
+  margin-left: 10px;
+}

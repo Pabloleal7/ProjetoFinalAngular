@@ -1,0 +1,9 @@
+#edit{
+  float: left;
+}
+
+fa-icon:hover{
+  color: blueviolet;
+  cursor: pointer;
+
+}

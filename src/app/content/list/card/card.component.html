@@ -1,0 +1,43 @@
+<div *ngIf="!editMode else edit" class="card" style="width: 18rem;">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-10">
+        <h5 class="card-title">{{card.titulo}}</h5>
+      </div>
+      <div class="col-md-2">
+        <fa-icon (click)="editModeChange()" id="edit" [icon]="faEdit"></fa-icon>
+      </div>
+    </div>
+
+    <p class="card-text">{{card.conteudo}}
+    </p>
+    <div style="display: flex; justify-content: space-between;">
+      <fa-icon *ngIf="card.lista != 'todo'" (click)="left()" [icon]="faCaretSquareLeft"></fa-icon>
+      <fa-icon (click)="excluir()" [icon]="faTrash"></fa-icon>
+      <fa-icon *ngIf="card.lista != 'done'" (click)="right()" [icon]="faCaretSquareRight"></fa-icon>
+    </div>
+
+  </div>
+</div>
+
+<ng-template #edit>
+  <form [formGroup]="addItemForm" (ngSubmit)="onSubmit()">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-10">
+            <input formControlName="titulo" type="text" class="card-title" value="{{card.titulo}}">
+          </div>
+          <div class="col-md-2">
+            <button type="submit"><fa-icon id="edit" [icon]="faSave"></fa-icon></button>
+          </div>
+        </div>
+        <textarea formControlName="conteudo" type="text" class="card-text" cols="30" rows="5">{{card.conteudo}}</textarea>
+
+
+
+
+      </div>
+    </div>
+  </form>
+</ng-template>

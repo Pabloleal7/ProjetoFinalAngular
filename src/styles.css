@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/* Color Theme Swatches in Hex */
+.Yellow-Grey-Red-1-hex { color: #BB2020; }
+.Yellow-Grey-Red-2-hex { color: #06111C; }
+.Yellow-Grey-Red-3-hex { color: #BEC7C7; }
+.Yellow-Grey-Red-4-hex { color: #FFEB4D; }
+.Yellow-Grey-Red-5-hex { color: #121317; }
+
+/* Color Theme Swatches in RGBA */
+.Yellow-Grey-Red-1-rgba { color: rgba(186, 31, 31, 1); }
+.Yellow-Grey-Red-2-rgba { color: rgba(5, 17, 28, 1); }
+.Yellow-Grey-Red-3-rgba { color: rgba(189, 198, 198, 1); }
+.Yellow-Grey-Red-4-rgba { color: rgba(255, 235, 77, 1); }
+.Yellow-Grey-Red-5-rgba { color: rgba(17, 18, 23, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Yellow-Grey-Red-1-hsla { color: hsla(0, 70, 42, 1); }
+.Yellow-Grey-Red-2-hsla { color: hsla(210, 64, 6, 1); }
+.Yellow-Grey-Red-3-hsla { color: hsla(180, 7, 76, 1); }
+.Yellow-Grey-Red-4-hsla { color: hsla(53, 100, 65, 1); }
+.Yellow-Grey-Red-5-hsla { color: hsla(227, 12, 8, 1); }

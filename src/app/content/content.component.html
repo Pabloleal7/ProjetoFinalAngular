@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <br>
+
+  <div class="row">
+    <button *ngIf="!addItemShow"  (click)="addItem()">Add ToDo</button>
+    <app-add-item (cancelarEvent)="addItem()" *ngIf="addItemShow"></app-add-item>
+  
+  </div>
+
+  <div  class="row">
+<!-- Todo -->
+    <div class="col-md-4">
+      <p>Todo</p>
+      <app-list   class="lista" [lista]="'todo'"></app-list>
+    </div>
+<!-- Doing -->
+    <div class="col-md-4">
+      <p>Doing</p>
+      <app-list  class="lista" [lista]="'doing'"></app-list>
+    </div>
+<!-- Done -->
+    <div class="col-md-4">
+      <p>Done</p>
+      <app-list class="lista" [lista]="'done'"></app-list>
+    </div>
+  </div>
+</div>
+<script src="https://kit.fontawesome.com/9fc075a6d1.js" crossorigin="anonymous"></script>

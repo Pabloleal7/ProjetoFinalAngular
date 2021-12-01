@@ -1,0 +1,17 @@
+<div class="container form-add">
+  <form [formGroup]="addItemForm" (ngSubmit)="onSubmit()" >
+    <div  class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+      <input formControlName="titulo" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Descreva a sua tarefa">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Conteúdo</label>
+      <textarea formControlName="conteudo" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="mb-3 botoes">
+      
+      <button type="button" (click)="cancelar()" class="btn btn-outline-secondary">Cancelar</button>
+      <button type="submit" class="btn btn-secondary">Adicionar</button>
+    </div>
+  </form>
+</div>

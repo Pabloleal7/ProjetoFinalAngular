@@ -1,0 +1,3 @@
+<div *ngFor="let cardItem of cards">
+  <app-card  class="card" [card]="cardItem" *ngIf="cardItem.lista == lista"></app-card>
+</div>
